@@ -1,0 +1,24 @@
+- Imagenes nulleables
+- ¿Paginación?
+- Slider que empiece automaticamente + loop [X]
+- Validación (español) []
+
+nombre de la bd u198806765_webnicovrey
+usr: u198806765_adminbd
+pass: Q1@94z0;Tk
+
+
+
+select 
+    a.id AS id,
+    a.titulo AS titulo,
+    a.descripcion AS descripcion,
+    a.imagen AS imagen,
+    a.anio_publicacion AS anio_publicacion,
+    b.id_categoria AS id_categoria,
+    a.url AS url 
+    from trabajos a join tab_trabajos_categ b on a.id = b.id_trabajo
+    
+
+
+
