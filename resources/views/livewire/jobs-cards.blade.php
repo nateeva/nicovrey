@@ -12,9 +12,10 @@
         @endif
         <div
             class="flex flex-wrap justify-center max-w-screen-xl gap-20 mx-auto mt-12 wow animate__animated animate__fadeInLeft animate__slow">
+
             @foreach($trabajos as $trabajo)
             <div class="transition-all hover:-translate-y-3">
-                <a href="{{$trabajo->url}}" target="_blank">
+                <a href="{{$trabajo->URL}}" target="_blank">
                     <div class="w-[280px] h-[280px]">
                         <img class="w-full h-full" src="{{ asset('img/img_trabajos') . '/' . $trabajo->imagen }}"
                             alt="Tapa de {{$trabajo->titulo}}">
